@@ -1,5 +1,8 @@
 
 1. ¿ Qué se debe incluir en .dockerignore y .gitignore ?
+  node_modules
+
+
 2. No tengo claro el uso de los puertos en docker run. En dónde se cambian ?
 3. Mo tengo claro el uso de las variables de entorno.
 
@@ -8,7 +11,14 @@
 - Crear imagen: docker build -t name .
 - Crear y correr contenedor: docker run --name name -d -p 3000:3000 image-name
 
+- http://docs.docker.com/compose/gettingstarted
+
+
 * MONGO
 - Mongo docker: docker run --name name -d -p 27017:27017 -v absolute/path/data/db mongo
   .Al crear de nuevo el contenedor para mongo se usa "-v absolute/path/..." para cargar datos 
   que fueron guardados durante la ejecución de un componente que ya no existe.
+
+
+* git
+markdownguide.org/cheat-sheet
